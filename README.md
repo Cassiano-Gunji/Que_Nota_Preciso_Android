@@ -5,3 +5,5 @@ Olá aluno,
 Este é o segundo projeto Android da disciplina Tópicos Especiais de Programação Orientada a Objetos desenvolvido em Android Studio.
 
 Cassiano.
+
+[Captura de tela](https://cloud.githubusercontent.com/assets/23004311/19631860/93791352-997f-11e6-9cd9-7f1f919a8cd7.png)
