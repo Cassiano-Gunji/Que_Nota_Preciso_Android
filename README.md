@@ -6,4 +6,4 @@ Este é o segundo projeto Android da disciplina Tópicos Especiais de Programaç
 
 Cassiano.
 
-[Captura de tela](https://cloud.githubusercontent.com/assets/23004311/19631860/93791352-997f-11e6-9cd9-7f1f919a8cd7.png)
+![image](https://cloud.githubusercontent.com/assets/23004311/19631764/c9c8fcfc-997e-11e6-843d-4de343bcb256.png)
