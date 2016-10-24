@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Que nota preciso?</string>
+    <string name="np1">NP1</string>
+    <string name="explicacao1">Abaixo estão as notas que você precisa tirar na NP2 para cada nota de PIM</string>
+    <string name="pim">PIM</string>
+    <string name="np2">NP2</string>
+    <string name="explicacao2">Defina uma nota de PIM personalizada</string>
+</resources>
