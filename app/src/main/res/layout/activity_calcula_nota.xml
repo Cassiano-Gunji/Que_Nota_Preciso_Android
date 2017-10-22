@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_calcula_nota"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.unip.quenotapreciso.CalculaNotaActivity">
 
+
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -22,7 +28,15 @@
             <TableRow
                 android:id="@+id/tableRow1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1">
 
                 <TextView
                     android:id="@+id/textView"
@@ -37,7 +51,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_span="3"
-                    android:editable="true"
                     android:gravity="center_vertical|center_horizontal"
                     android:inputType="numberDecimal" />
 
@@ -46,7 +59,13 @@
             <TableRow
                 android:id="@+id/tableRow2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_conversion_absoluteHeight="43dp"
+                tools:layout_conversion_absoluteWidth="352dp"
+                tools:layout_conversion_absoluteX="16dp"
+                tools:layout_conversion_absoluteY="58dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="58dp">
 
                 <TextView
                     android:id="@+id/textView2"
@@ -56,12 +75,19 @@
                     android:text="@string/explicacao1"
                     android:textColor="#000000"
                     android:textSize="18sp" />
+
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="352dp"
+                tools:layout_conversion_absoluteX="16dp"
+                tools:layout_conversion_absoluteY="101dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="101dp">
 
                 <TextView
                     android:id="@+id/textView3"
@@ -75,37 +101,40 @@
                     android:id="@+id/editText4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal"
+                    android:inputType="none"
                     android:text="5.0" />
 
                 <EditText
                     android:id="@+id/editText5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal"
+                    android:inputType="none"
                     android:text="7.5" />
 
                 <EditText
                     android:id="@+id/editText6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal"
+                    android:inputType="none"
                     android:text="10.0" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="352dp"
+                tools:layout_conversion_absoluteX="16dp"
+                tools:layout_conversion_absoluteY="144dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="144dp">
 
                 <TextView
                     android:id="@+id/textView4"
@@ -119,34 +148,37 @@
                     android:id="@+id/np250EditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal" />
+                    android:inputType="none" />
 
                 <EditText
                     android:id="@+id/np275EditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal" />
+                    android:inputType="none" />
 
                 <EditText
                     android:id="@+id/np2100EditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal" />
+                    android:inputType="none" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_conversion_absoluteHeight="21dp"
+                tools:layout_conversion_absoluteWidth="352dp"
+                tools:layout_conversion_absoluteX="16dp"
+                tools:layout_conversion_absoluteY="186dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="186dp">
 
                 <TextView
                     android:id="@+id/textView5"
@@ -161,7 +193,13 @@
             <TableRow
                 android:id="@+id/tableRow6"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="352dp"
+                tools:layout_conversion_absoluteX="16dp"
+                tools:layout_conversion_absoluteY="208dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="208dp">
 
                 <TextView
                     android:id="@+id/textView6"
@@ -182,16 +220,21 @@
                     android:id="@+id/pimEditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal" />
+                    android:inputType="none" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="352dp"
+                tools:layout_conversion_absoluteX="16dp"
+                tools:layout_conversion_absoluteY="250dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="250dp">
 
                 <TextView
                     android:id="@+id/textView7"
@@ -206,14 +249,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_span="3"
-                    android:editable="false"
                     android:focusable="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="numberDecimal" />
+                    android:inputType="none" />
             </TableRow>
+
         </TableLayout>
-
-
     </ScrollView>
 
-</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
