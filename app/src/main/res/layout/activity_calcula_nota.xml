@@ -73,7 +73,6 @@
                     android:layout_height="wrap_content"
                     android:layout_span="4"
                     android:text="@string/explicacao1"
-                    android:textColor="#000000"
                     android:textSize="18sp" />
 
             </TableRow>
